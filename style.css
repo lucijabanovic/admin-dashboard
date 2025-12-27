@@ -86,6 +86,53 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     border: 1px solid red;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+#header-top {
+    grid-row: 1 / 2;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#search-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#header-top img {
+    height: 22px;
+}
+
+#profile-photo {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#header-top input {
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+
+#header-bottom {
+    grid-row: 2 / 3;
+    border: 1px solid red;
 }
 
 #main {
