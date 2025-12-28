@@ -12,6 +12,8 @@ body {
     grid-template-rows: 1fr 4.5fr;
 }
 
+/* Sidebar Settings -----------------*/
+
 #sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -82,27 +84,30 @@ body {
     grid-row: 10 / 11;
 }
 
+/* Header ------------------- */
+
 #header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    border: 1px solid red;
     display: grid;
     grid-template-rows: 1fr 1.5fr;
+    border: 1px solid red;
 }
+
+/* Header Top ------------------- */
 
 #header-top {
     grid-row: 1 / 2;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 40px;
 }
 
 #search-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 #profile-section {
@@ -129,11 +134,57 @@ body {
     padding-left: 10px;
 }
 
+/* Header Bottom -------------------- */
 
 #header-bottom {
     grid-row: 2 / 3;
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
 }
+
+#profile-big {
+    display: flex;
+    align-items: center;
+}
+
+#photo-big {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    gap: 5px;
+}
+
+#small {
+    font-size: 13px;
+}
+
+#big {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#btns {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn {
+    border: 2px solid black;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+/* Main ------------------------------ */
 
 #main {
     grid-column: 2 / 3;
